@@ -1,0 +1,123 @@
+.form-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  font-family: 'Open Sans', sans-serif;
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #444;
+}
+
+.form-group input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  background-color: #fafafa;
+  transition: border 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+button[type="submit"] {
+  grid-column: span 2;
+  padding: 12px;
+  background-color: #007bff;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+form p {
+  grid-column: span 2;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+/* AI Result Box */
+.ai-result {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #e9f7ef;
+  border: 1px solid #c1eac5;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.ai-result h3 {
+  margin-bottom: 10px;
+  color: #2e7d32;
+}
+
+.results-section {
+  margin-top: 40px;
+  padding: 25px;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 10px;
+}
+
+.results-section h3 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.results-section ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 25px;
+}
+
+.results-section li {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  color: #444;
+}
+
+/* Chart Styling */
+.chart-wrapper {
+  margin-top: 40px;
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
