@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import LineChartComponent from '../user/LineChartComponent';
 import '../style/dashboard.css';
+import Logout from '../user/logout';
 
 function Dashboard() {
     const [carbonTotal, setCarbonTotal] = useState(0);
@@ -48,7 +49,7 @@ function Dashboard() {
                 <a href="/report">Report</a>
                 <a href="/about">About Us</a>
                 <a href="/profile">Profile</a>
-                <a href="/logout">Logout</a>
+                <Logout onLogout={() => window.location.href = '/'} />
             </nav>
 
             <div className="filters">
