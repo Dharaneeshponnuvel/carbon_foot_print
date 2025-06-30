@@ -28,7 +28,7 @@ A web application that helps users estimate their carbon footprint and receive A
 ---
 
 ## 🧩 Folder Structure
-
+```bash
 carbon_foot_print/
 ├── client/ # React frontend
 ├── server/
@@ -44,7 +44,7 @@ carbon_foot_print/
 ├── .gitignore
 └── README.md
 
-
+```
 ---
 
 ## 🧪 Setup Instructions
@@ -90,16 +90,14 @@ Flask AI Model:
 
 cd server/CARBON_PROJECT/CARBON_PROJECT/ML_PART
 python app.py
-Node.js Backend:
 ```
 ```bash
-
+Node.js Backend:
 cd server
 node index.js
-React Frontend:
 ```
 ```bash
-
+React Frontend:
 cd client
 npm start
 ```
