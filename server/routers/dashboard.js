@@ -32,12 +32,17 @@ router.get('/d', async (req, res) => {
             GROUP BY date ORDER BY date ASC
         `;
         const recentQuery = `
-           SELECT CAST(date AS DATE) AS date, SUM(carbon_emitted) AS total
-FROM carbon_emission_data
-WHERE user_id = $1
-GROUP BY CAST(date AS DATE)
-ORDER BY CAST(date AS DATE) ASC;
-        `;
+    SELECT *
+    FROM (
+        SELECT *, ROW_NUMBER() OVER (PARTITION BY CAST(date AS DATE) ORDER BY date DESC) as rn
+        FROM carbon_emission_data
+        WHERE user_id = $1
+    ) sub
+    WHERE rn = 1
+    ORDER BY date DESC
+    LIMIT 5;
+`;
+
 
         const params = [user_id];
         const totalResult = await client.query(totalQuery, params);

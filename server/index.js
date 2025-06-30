@@ -101,6 +101,7 @@ app.post('/logout', (req, res) => {
     });
 });
 
+// npx nodemon server.js
 
 // Protected route example
 

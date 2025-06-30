@@ -1,0 +1,30 @@
+.about-container {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 20px;
+  background: #f7f9fb;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.6;
+}
+
+.about-container h1,
+.about-container h2 {
+  color: #2a2a2a;
+  margin-bottom: 12px;
+}
+
+.about-container p {
+  color: #444;
+  margin-bottom: 16px;
+}
+
+.about-container ul {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.about-container ul li {
+  margin-bottom: 8px;
+}

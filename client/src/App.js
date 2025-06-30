@@ -6,7 +6,7 @@ import Signup from './user/signup';
 import Dashboard from './user/dashboard';
 import CalculateCarbon from './user/calculate';
 import Report from './user/ReportPage';
-
+import About from './user/about';
 import Profile from './user/profile';
 import Logout from './user/logout';
 
@@ -23,6 +23,7 @@ function App() {
         <Route path="/profile" element={<Profile />} />
         
         <Route path="/logout" element={<Logout />} />
+        <Route path="/about" element={<About />} />
       </Routes>
     </Router>
   );
