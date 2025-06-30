@@ -69,9 +69,9 @@ npm install
 ```
 - ML FLASK:
   ```bash
-  cd ../server/CARBON_PROJECT/CARBON_PROJECT/ML_PART
-  pip install -r requirements.txt
-```
+    cd ../server/CARBON_PROJECT/CARBON_PROJECT/ML_PART
+    pip install -r requirements.txt
+  ```
 
 ## 3. Environment Variables
 ```bash
@@ -81,6 +81,10 @@ DB_HOST=localhost
 DB_PORT=5432
 DB_NAME=your_db_name
 SESSION_SECRET=your_secret_key
+GOOGLE_CLIENT_ID=your_clint_id
+GOOGLE_CLIENT_SECRET=your_client_secret
+EMAIL_USER=user_email
+EMAIL_PASS=email_pass
 ```
 
 4. Start Servers
